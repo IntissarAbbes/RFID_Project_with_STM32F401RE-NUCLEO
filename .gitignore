@@ -1,0 +1,27 @@
+# Ignore build outputs
+build/
+Debug/
+Release/
+
+# Ignore temporary and generated files
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+*.lst
+*.d
+
+# IDE-specific folders
+.vscode/
+.settings/
+*.launch
+*.uvprojx
+*.uvoptx
+*.ewd
+*.ewp
+*.ewt
+
+# System files
+.DS_Store
+Thumbs.db
