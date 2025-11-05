@@ -1,27 +1,59 @@
-# Ignore build outputs
-build/
+# =========================================
+# STM32CubeIDE Git Ignore Template
+# =========================================
+
+# Build directories
 Debug/
 Release/
+build/
+[Bb]uild*/
 
-# Ignore temporary and generated files
-*.o
+# Generated files
 *.elf
 *.bin
 *.hex
 *.map
-*.lst
+*.o
 *.d
+*.lst
+*.su
+*.dep
+*.log
 
-# IDE-specific folders
-.vscode/
+# CubeIDE settings and metadata
 .settings/
+.metadata/
+.project
+.cproject
+.loadpath
+.repos/
+.externalToolBuilders/
 *.launch
-*.uvprojx
-*.uvoptx
-*.ewd
-*.ewp
-*.ewt
+*.sublime-workspace
+*.sublime-project
 
-# System files
+# Backup and temp files
+*~
+*.tmp
+*.bak
+*.swp
+*.swo
+*.dmp
+
+# OS-specific
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Python caches (if you use scripts)
+__pycache__/
+*.pyc
+
+# =========================================
+# Keep these (DO NOT ignore)
+# =========================================
+# Core/ and Drivers/ contain your main code
+!Core/
+!Drivers/
+# Keep the project configuration file
+!*.ioc
